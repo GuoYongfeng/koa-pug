@@ -1,12 +1,9 @@
 {
-  "name": "koa-pug",
-  "version": "3.0.0-2",
+  "name": "koa-pug-jade",
+  "version": "3.0.1",
   "description": "A Pug middleware for Koa",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chrisyip/koa-pug.git"
-  },
+  "repository": "https://github.com/chrisyip/koa-pug.git",
   "bugs": {
     "url": "https://github.com/chrisyip/koa-pug/issues"
   },
@@ -22,10 +19,7 @@
     "template",
     "pug"
   ],
-  "author": {
-    "name": "Chris Yip",
-    "email": "i@chrisyip.im"
-  },
+  "author": "guoyff@yonyou.com",
   "license": "MIT",
   "dependencies": {
     "lodash.assign": "^3.2.0",
