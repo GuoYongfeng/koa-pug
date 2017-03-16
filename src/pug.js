@@ -28,18 +28,18 @@ function Pug (options) {
   function compileFile (tpl, locals, compileOptions, skipCache) {
     var tplPath, compiler
 
-    if (endsWith(tpl, '.pug')) {
+    if (endsWith(tpl, '.jade')) {
       tplPath = path.resolve(viewPath, tpl)
     } else {
       // If view path doesn't end with `.pug`, add `.pug` and check if it exists
       var dirname = path.resolve(viewPath, tpl)
-      tplPath = dirname + '.pug'
+      tplPath = dirname + '.jade'
 
       // If doesn't exist and the dirname is a folder, then search `index.pug` file
       if (!fs.existsSync(tplPath)) {
         var stat = fs.statSync(dirname)
         if (stat.isDirectory()) {
-          tplPath = path.resolve(dirname, 'index.pug')
+          tplPath = path.resolve(dirname, 'index.jade')
         }
       }
     }
